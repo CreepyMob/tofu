@@ -173,7 +173,7 @@ lazy val opticsCore = project
     defaultSettings,
     libraryDependencies ++= Seq(catsCore, alleycats),
     publishName := "optics-core"
-  )
+  ).dependsOn(higherKindCore)
 
 lazy val opticsInterop = project
   .in(file("optics/interop"))
